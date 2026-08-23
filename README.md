@@ -4,7 +4,6 @@
 Short introduction
 
 ## 🔬 Research
-## 🔬 Research
 
 My doctoral research focuses on **interpretable deep learning for medical classification and diagnosis**, with a particular emphasis on **brain MRI analysis and glioblastoma**.
 
@@ -29,6 +28,13 @@ Ultimately, the research is built around two complementary objectives:
 The goal is not only to predict *what* the model identifies, but also to better understand **why it makes a particular prediction**.
 
 ## 🧠 Research Interests
+* Deep Learning / Machine Learning
+* Brain MRI / Neuroimaging
+* Explainable / Interpretable AI (XAI)
+* Computer Vision
+* Radiogenomics
+* Medical Diagnosis / Classification
+* Hybrid Deep Learning Models
 
 ## 🛠️ Technical Skills
 
