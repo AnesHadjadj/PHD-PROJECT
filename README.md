@@ -49,9 +49,9 @@ A comparative review of three deep learning frameworks for MRI-based MGMT promot
 ## 🔎 Current Research
 ### XAI-Guided Improvement of KBF for MGMT Prediction
 
-My current doctoral research investigates the use of **Explainable AI (XAI)** to improve Knowledge-Based Filtering (KBF) for **MGMT promoter methylation prediction from brain MRI**.
+I'm currently investigating the use of **Explainable AI (XAI)** to improve Knowledge-Based Filtering (KBF) for **MGMT promoter methylation prediction from brain MRI**.
 
-The work builds upon the approach proposed by Capuozzo et al., using FLAIR and T1-weighted MRI to perform knowledge-based filtering before CNN-based prediction.
+The work builds upon the approach proposed by "Capuozzo et al.", using FLAIR and T1-weighted MRI to perform knowledge-based filtering before CNN-based prediction.
 
 The main research direction is to investigate whether the regions selected by KBF correspond to the regions considered important by the model, and to use this information to develop an **XAI-guided improvement of the filtering stage**.
 
