@@ -36,10 +36,9 @@ The goal is not only to predict *what* the model identifies, but also to better 
 * Medical Diagnosis / Classification
 * Hybrid Deep Learning Models
 
-## 🛠️ Technical Skills
-
 ## 📚 Publications
 
 ## 🔎 Current Research
 
-## 🌐 Links
+## 📄 Curriculum Vitae
+📄 All my documents, including my Resume, publications, and certificates, are available in the [`Documents`](./Documents/) folder.
