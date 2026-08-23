@@ -41,4 +41,4 @@ The goal is not only to predict *what* the model identifies, but also to better 
 ## 🔎 Current Research
 
 ## 📄 Curriculum Vitae
-📄 All my documents, including my Resume, publications, and certificates, are available in the [`Documents`](./My_Documents/) folder.
+📄 All my documents, including my Resume, publications, and certificates, are available in the [`My Documents`](./My%20Documents/) folder.
