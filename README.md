@@ -36,7 +36,15 @@ The goal is not only to predict *what* the model identifies, but also to better 
 * Medical Diagnosis / Classification
 * Hybrid Deep Learning Models
 
-## 📚 Publications
+## 📚 Publication
+
+**Deep Learning-Based MGMT Promoter Methylation Prediction: A Comparative Interpretability-Oriented Review**
+
+*2026 International Conference on Cyber Management and Engineering (CyMaEn'26)* — **Accepted**
+
+A comparative review of three deep learning frameworks for MRI-based MGMT promoter methylation prediction, focusing on predictive performance, interpretability, generalization, and clinical relevance.
+
+[📄 Paper](./My%20Documents/MGMT_Review_Conference_Paper.pdf)
 
 ## 🔎 Current Research
 
