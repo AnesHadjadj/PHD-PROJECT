@@ -1,18 +1,18 @@
-## Current Progress
+# Current research
 
-- [x] Reproduced and understood the main Capuozzo preprocessing pipeline
-- [x] Understood the DICOM → NIfTI → MAT pipeline
-- [x] Understood KBF generation from FLAIR + T1-weighted MRI
-- [x] Understood the 2D/3D classifier configuration
-- [x] Analyzed the original experimental scenarios and datasets
-- [x] Identified the Capuozzo baseline as the starting point
-- [ ] Define XAI evaluation criteria
-- [ ] Select candidate XAI methods
-- [ ] Benchmark candidate methods
-- [ ] Analyze KBF/XAI agreement
-- [ ] Design an XAI-guided KBF improvement
-- [ ] Retrain and evaluate the improved pipeline
-- [ ] Compare baseline vs. improved approach
-- [ ] Quantitatively evaluate explanation quality
+## Active contribution: DSEG-LIME-guided analysis of KBF
 
-I continuously update this page as new experiments, findings, and methodological developments emerge..
+DSEG-LIME was adapted to the MGMT CNN by segmenting the FLAIR slice with SAM/DSEG and transferring the perturbation masks to the corresponding KLF input.
+
+- [x] Reproduce the Capuozzo KBF pipeline
+- [x] Adapt DSEG-LIME to the MGMT classifier
+- [x] Run a balanced 20-patient pilot across five folds
+- [x] Test faithfulness, random controls, stability and perturbation sensitivity
+- [x] Compare positive DSEG regions with KBF support
+- [x] Generate 585 fold-0 training explanations
+- [x] Run the first fold-0 reweighting sentinel
+- [ ] Confirm results under the exact historical training protocol
+- [ ] Evaluate improved integration mechanisms
+- [ ] Perform five-fold validation of the selected contribution
+
+See the [complete DSEG-LIME/KBF research record](./DSEG_LIME_KBF/).

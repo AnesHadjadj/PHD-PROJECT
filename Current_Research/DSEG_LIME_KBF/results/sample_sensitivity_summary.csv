@@ -1,0 +1,4 @@
+samples_a,samples_b,patients,mean_positive_mask_dice,mean_weight_map_correlation,top_region_agreement_rate,mean_segmentation_ari
+64,128,4,0.8181371011521041,0.9542183006322038,0.5,1.0
+64,256,4,0.9156447840110808,0.9362429969839935,0.5,1.0
+128,256,4,0.8321342774794995,0.9421477853766631,1.0,1.0

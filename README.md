@@ -1,70 +1,46 @@
-# PHD-PROJECT
-# Anes Hadjadj
+# Interpretable Deep Learning for MGMT Prediction
 
-Short introduction
+Doctoral research repository of **Anes Hadjadj** on interpretable deep learning for glioblastoma MRI analysis and non-invasive prediction of **MGMT promoter methylation**.
 
-## 🔬 Research
+## Research objective
 
-My doctoral research focuses on **interpretable deep learning for medical classification and diagnosis**, with a particular emphasis on **brain MRI analysis and glioblastoma**.
+Can reliable local explanations improve the Knowledge-Based Filtering (KBF) stage while preserving or improving MGMT prediction? The current pipeline combines FLAIR/T1w MRI, Capuozzo et al.'s KBF, a 2D CNN, DSEG-LIME explanations based on SAM regions, and objective faithfulness and stability tests.
 
-Deep learning has demonstrated strong potential for medical image analysis, but the complexity of modern models remains a major challenge for clinical adoption. A model may achieve high predictive performance while providing little insight into **why** a particular prediction was made. My research therefore investigates the balance between **predictive performance and interpretability**.
+## Current scientific status
 
-A central application of this research is the **non-invasive prediction of MGMT promoter methylation status in glioblastoma (GBM)** from brain MRI. MGMT methylation is an important molecular biomarker associated with treatment response, but its assessment traditionally relies on invasive tissue sampling followed by molecular analysis.
+| Milestone | Status | Main result |
+|---|---:|---|
+| Capuozzo pipeline reproduction | Completed | KBF and CNN inference reproduced locally |
+| Balanced DSEG-LIME pilot | Completed | 20 patients, 10 per MGMT class |
+| Explanation faithfulness | Completed | Top DSEG region caused the largest deletion effect in 16/20 cases |
+| Same-size random control | Completed | DSEG beat the random mean in 19/20 cases |
+| Stability analysis | Completed | 6 patients across 3 seeds |
+| Perturbation sensitivity | Completed | 128 vs 256 agreed on the top region in all 4 tested cases |
+| Fold-0 explanations | Completed | 585/585 training explanations generated |
+| Fold-0 sentinel retraining | Completed | Accuracy/F1 increased at alpha=0.25; AUC did not improve |
+| Exact-protocol confirmation | Pending | Repeat with exact Capuozzo training settings |
+| Five-fold final evaluation | Pending | After selecting a defensible integration mechanism |
 
-The objective is to investigate deep learning approaches that can learn predictive patterns directly from MRI while providing **transparent and objectively evaluable explanations** of their decisions.
+The evidence supports DSEG-LIME as a **faithful diagnostic tool for KBF**, but not yet as proof that direct explanation-based reweighting improves MGMT prediction. Explanation fidelity and predictive utility are distinct properties.
 
-### 🎯 Research Objectives
+[Detailed experiment, results and reproducibility notes](./Current_Research/DSEG_LIME_KBF/)
 
-* Develop deep learning approaches for **MGMT promoter methylation prediction** from brain MRI.
-* Investigate hybrid approaches that combine predictive modeling with **interpretability mechanisms**.
-* Compare different **Explainable AI (XAI)** methods for medical imaging.
-* Develop objective criteria for evaluating the quality and reliability of generated explanations.
-* Investigate whether interpretable models can maintain competitive predictive performance while providing **clinically meaningful insights**.
+## Repository structure
 
-Ultimately, the research is built around two complementary objectives:
+- [`Capuozzo/`](./Capuozzo/): reproduced baseline code and historical experimental material.
+- [`Current_Research/`](./Current_Research/): active contribution and validated intermediate results.
+- [`My Documents/`](./My%20Documents/): publication and academic documents.
 
-> **Performance + Transparency**
+Patient MRI volumes, private clinical data, local checkpoints and full generated tensors are intentionally excluded.
 
-The goal is not only to predict *what* the model identifies, but also to better understand **why it makes a particular prediction**.
-
-## 🧠 Research Interests
-* Deep Learning / Machine Learning
-* Brain MRI / Neuroimaging
-* Explainable / Interpretable AI (XAI)
-* Computer Vision
-* Radiogenomics
-* Medical Diagnosis / Classification
-* Hybrid Deep Learning Models
-
-## 📚 Publication
+## Publication
 
 **Deep Learning-Based MGMT Promoter Methylation Prediction: A Comparative Interpretability-Oriented Review**
 
-*2026 International Conference on Cyber Management and Engineering (CyMaEn'26)* — **Accepted**
+2026 International Conference on Cyber Management and Engineering (CyMaEn'26) — **Accepted**
 
-A comparative review of three deep learning frameworks for MRI-based MGMT promoter methylation prediction, focusing on predictive performance, interpretability, generalization, and clinical relevance.
+[Conference paper](./My%20Documents/IEEE_CyMaEn_Review_Conference_Paper.pdf)
 
-[📄 Paper](./My%20Documents/MGMT_Review_Conference_Paper.pdf)
+## Important limitation
 
-## 🔎 Current Research
-### XAI-Guided Improvement of KBF for MGMT Prediction
-
-I'm currently investigating the use of **Explainable AI (XAI)** to improve Knowledge-Based Filtering (KBF) for **MGMT promoter methylation prediction from brain MRI**.
-
-The work builds upon the approach proposed by "Capuozzo et al.", using FLAIR and T1-weighted MRI to perform knowledge-based filtering before CNN-based prediction.
-
-The main research direction is to investigate whether the regions selected by KBF correspond to the regions considered important by the model, and to use this information to develop an **XAI-guided improvement of the filtering stage**.
-
-**Current focus:**
-- Reproducing and establishing the Capuozzo baseline
-- Defining objective criteria for XAI evaluation
-- Benchmarking candidate XAI methods
-- Comparing KBF-selected regions with model explanations and available ground truth
-- Designing an XAI-guided KBF improvement
-- Evaluating its impact on prediction performance and explanation quality
-
-> **Research goal:** Improve the relationship between *where the model looks* and *where the relevant pathology is located*, while maintaining competitive predictive performance.
-
-[📖 Detailed research notes](./Current_Research/)
-## 📄 Curriculum Vitae
-📄 All my documents, including my Resume, publications, and certificates, are available in the [`My Documents`](./My%20Documents/) folder.
+The 20-patient pilot validates explanation behavior; it does not estimate final classifier performance. The fold-0 sentinel used a common `batch_size=32`, rather than the historical Capuozzo `batch_size=1`. Comparisons between sentinel variants are fair, but exact baseline equivalence remains to be confirmed.

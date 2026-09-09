@@ -1,0 +1,13 @@
+{
+  "patients": 20,
+  "top_beats_random_mean_rate": 0.95,
+  "top_significant_vs_random_rate_p05": 0.65,
+  "median_top_vs_random_p": 0.009900990099009901,
+  "deletion_better_than_random_rate": 0.8,
+  "insertion_better_than_random_rate": 0.85,
+  "median_deletion_auc_gain": 0.029712233554722828,
+  "median_insertion_auc_gain": 0.03186302830747789,
+  "median_kbf_recall_positive_dseg": 0.8648093354900979,
+  "median_kbf_precision_positive_dseg": 0.01940951496430169,
+  "median_kbf_dice_positive_dseg": 0.038062814989329646
+}
