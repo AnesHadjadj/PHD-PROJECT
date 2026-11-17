@@ -24,3 +24,8 @@ secrets.*
 Thumbs.db
 .vscode/
 .idea/
+
+# Unpublished contribution retained locally until publication
+/Current_Research/DSEG_LIME_KBF/code/
+/Current_Research/DSEG_LIME_KBF/results/
+/Current_Research/DSEG_LIME_KBF/figures/

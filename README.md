@@ -1,40 +1,61 @@
-# Interpretable Deep Learning for MGMT Prediction
+# PHD-PROJECT
+# Anes Hadjadj
 
-Doctoral research repository of **Anes Hadjadj** on interpretable deep learning for glioblastoma MRI analysis and non-invasive prediction of **MGMT promoter methylation**.
+Doctoral research portfolio in interpretable deep learning for medical imaging.
 
-## Research objective
+## 🔬 Research
 
-My research investigates how deep learning can support MGMT prediction from brain MRI while making model decisions more understandable. It brings together **medical image analysis, predictive modelling and explainable artificial intelligence**.
+My doctoral research focuses on **interpretable deep learning for medical classification and diagnosis**, with a particular emphasis on **brain MRI analysis and glioblastoma**.
 
-The central research question is how to improve predictive performance while understanding the information used by neural networks.
+Deep learning has demonstrated strong potential for medical image analysis, but the complexity of modern models remains a major challenge for clinical adoption. A model may achieve high predictive performance while providing little insight into **why** a particular prediction was made. My research therefore investigates the balance between **predictive performance and interpretability**.
 
-## Research themes
+A central application of this research is the **non-invasive prediction of MGMT promoter methylation status in glioblastoma (GBM)** from brain MRI. MGMT methylation is an important molecular biomarker associated with treatment response, but its assessment traditionally relies on invasive tissue sampling followed by molecular analysis.
 
-- Brain MRI analysis for glioblastoma research.
-- Deep learning for MGMT promoter methylation prediction.
-- Knowledge-based image processing and explainable AI.
-- Evaluation of predictive performance and model interpretation.
+The objective is to investigate deep learning approaches that can learn predictive patterns directly from MRI while providing **transparent and objectively evaluable explanations** of their decisions.
 
-## Current research
+### 🎯 Research Objectives
 
-The ongoing contribution explores these themes through experimental research. Detailed methods, results and supporting implementation will be shared **after publication**.
+* Develop deep learning approaches for **MGMT promoter methylation prediction** from brain MRI.
+* Investigate hybrid approaches that combine predictive modeling with **interpretability mechanisms**.
+* Compare different **Explainable AI (XAI)** methods for medical imaging.
+* Develop objective criteria for evaluating the quality and reliability of generated explanations.
+* Investigate whether interpretable models can maintain competitive predictive performance while providing **clinically meaningful insights**.
 
-[Research theme and project directory](./Current_Research/DSEG_LIME_KBF/)
+Ultimately, the research is built around two complementary objectives:
 
-## Repository structure
+> **Performance + Transparency**
 
-- [`Capuozzo/`](./Capuozzo/): reproduced baseline code and historical experimental material.
-- [`Current_Research/`](./Current_Research/): research project directories and existing development material.
-- [`My Documents/`](./My%20Documents/): publication and academic documents.
+The goal is not only to predict *what* the model identifies, but also to better understand **why it makes a particular prediction**.
 
-Existing files are retained as part of the project history. They are not a final release of the ongoing contribution.
+## 🧠 Research Interests
+* Deep Learning / Machine Learning
+* Brain MRI / Neuroimaging
+* Explainable / Interpretable AI (XAI)
+* Computer Vision
+* Radiogenomics
+* Medical Diagnosis / Classification
+* Hybrid Deep Learning Models
 
-Patient MRI volumes, private clinical data, local checkpoints and full generated tensors are intentionally excluded.
-
-## Publication
+## 📚 Publication
 
 **Deep Learning-Based MGMT Promoter Methylation Prediction: A Comparative Interpretability-Oriented Review**
 
-2026 International Conference on Cyber Management and Engineering (CyMaEn'26) — **Accepted**
+*2026 International Conference on Cyber Management and Engineering (CyMaEn'26)* — **Accepted**
 
-[Conference paper](./My%20Documents/IEEE_CyMaEn_Review_Conference_Paper.pdf)
+A comparative review of three deep learning frameworks for MRI-based MGMT promoter methylation prediction, focusing on predictive performance, interpretability, generalization, and clinical relevance.
+
+[📄 Paper](./My%20Documents/IEEE_CyMaEn_Review_Conference_Paper.pdf)
+
+## 🔎 Current Research
+### Explainable AI for MRI based MGMT prediction
+
+My current research explores the relationship between **predictive performance and interpretability** in deep learning for brain MRI analysis, with MGMT promoter methylation prediction as the central application.
+
+The research theme combines knowledge-based image processing and explainable AI to study how models use medical image information.
+
+**Detailed methods, experimental results and supporting implementation will be shared after publication.**
+
+[📖 Research overview](./Current_Research/)
+
+## 📄 Curriculum Vitae
+📄 All my documents, including my Resume, publications, and certificates, are available in the [`My Documents`](./My%20Documents/) folder.

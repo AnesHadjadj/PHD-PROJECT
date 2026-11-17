@@ -1,18 +1,11 @@
-# Current research
+# Current Research
 
-## Active contribution: DSEG-LIME-guided analysis of KBF
+## Explainable AI for MRI based MGMT prediction
 
-DSEG-LIME was adapted to the MGMT CNN by segmenting the FLAIR slice with SAM/DSEG and transferring the perturbation masks to the corresponding KLF input.
+My doctoral research investigates **predictive performance and interpretability** in deep learning for glioblastoma MRI analysis.
 
-- [x] Reproduce the Capuozzo KBF pipeline
-- [x] Adapt DSEG-LIME to the MGMT classifier
-- [x] Run a balanced 20-patient pilot across five folds
-- [x] Test faithfulness, random controls, stability and perturbation sensitivity
-- [x] Compare positive DSEG regions with KBF support
-- [x] Generate 585 fold-0 training explanations
-- [x] Run the first fold-0 reweighting sentinel
-- [ ] Confirm results under the exact historical training protocol
-- [ ] Evaluate improved integration mechanisms
-- [ ] Perform five-fold validation of the selected contribution
+The central application is MGMT promoter methylation prediction from brain MRI. The work explores knowledge-based image processing and explainable artificial intelligence to better understand the information used by predictive models.
 
-See the [complete DSEG-LIME/KBF research record](./DSEG_LIME_KBF/).
+Detailed methods, experimental results and supporting implementation will be shared **after publication**.
+
+[Project theme](./DSEG_LIME_KBF/) · [Research profile and publication](../README.md) · [CV and academic documents](../My%20Documents/)
