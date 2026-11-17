@@ -1,39 +1,40 @@
-# Anes Hadjadj — Doctoral Research
+# Interpretable Deep Learning for MGMT Prediction
 
-## Artificial intelligence for brain MRI analysis
+Doctoral research repository of **Anes Hadjadj** on interpretable deep learning for glioblastoma MRI analysis and non-invasive prediction of **MGMT promoter methylation**.
 
-I work on deep learning and explainable artificial intelligence for glioblastoma research. My research focuses on predicting **MGMT promoter methylation status** from brain MRI and understanding the information used by neural networks to make their predictions.
+## Research objective
 
-MGMT is a molecular marker relevant to glioblastoma treatment. My work explores how medical images can support research into its prediction.
+My research investigates how deep learning can support MGMT prediction from brain MRI while making model decisions more understandable. It brings together **medical image analysis, predictive modelling and explainable artificial intelligence**.
 
-## Research focus
+The central research question is how to improve predictive performance while understanding the information used by neural networks.
 
-**How can we improve predictive performance while making model decisions easier to understand?**
+## Research themes
 
-My work brings together three areas:
+- Brain MRI analysis for glioblastoma research.
+- Deep learning for MGMT promoter methylation prediction.
+- Knowledge-based image processing and explainable AI.
+- Evaluation of predictive performance and model interpretation.
 
-- **Medical image analysis** — studying information extracted from brain MRI.
-- **Predictive modelling** — developing and evaluating deep learning approaches for MGMT prediction.
-- **Explainable AI** — examining which image regions influence model predictions and how explanations can guide model development.
+## Current research
 
-## Current work
+The ongoing contribution explores these themes through experimental research. Detailed methods, results and supporting implementation will be shared **after publication**.
 
-I am investigating the integration of knowledge-based image filtering and regional explanations, with an emphasis on both predictive performance and interpretation. This includes experimental development, comparative evaluation and reproducible research workflows.
+[Research theme and project directory](./Current_Research/DSEG_LIME_KBF/)
 
-**The work is ongoing. Detailed methods, experimental results and supporting implementation will be shared following publication.**
+## Repository structure
 
-This page provides an overview for readers of my CV. Existing repository material documents earlier stages of the project and is not the final release of the current study.
+- [`Capuozzo/`](./Capuozzo/): reproduced baseline code and historical experimental material.
+- [`Current_Research/`](./Current_Research/): research project directories and existing development material.
+- [`My Documents/`](./My%20Documents/): publication and academic documents.
 
-## Research background
+Existing files are retained as part of the project history. They are not a final release of the ongoing contribution.
 
-My work builds on published methods, including the knowledge-based filtering approach of Capuozzo and colleagues and DSEG-LIME by Knab and colleagues. These foundations are distinguished from the adaptations investigated in my doctoral research.
+Patient MRI volumes, private clinical data, local checkpoints and full generated tensors are intentionally excluded.
 
-## Research writing
+## Publication
 
-[Deep Learning-Based MGMT Promoter Methylation Prediction: A Comparative Interpretability-Oriented Review](./My%20Documents/IEEE_CyMaEn_Review_Conference_Paper.pdf)
+**Deep Learning-Based MGMT Promoter Methylation Prediction: A Comparative Interpretability-Oriented Review**
 
-## Project overview
+2026 International Conference on Cyber Management and Engineering (CyMaEn'26) — **Accepted**
 
-[Current research overview](./Current_Research/DSEG_LIME_KBF/)
-
-**Research interests:** medical imaging · deep learning · explainable AI · radiogenomics · reproducible research
+[Conference paper](./My%20Documents/IEEE_CyMaEn_Review_Conference_Paper.pdf)

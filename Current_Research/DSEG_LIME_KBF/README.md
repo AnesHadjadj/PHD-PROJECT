@@ -1,19 +1,25 @@
-# Explainable deep learning for MGMT prediction
+# DSEG-LIME and KBF for MGMT prediction
 
-This project is part of **Anes Hadjadj’s doctoral research** on artificial intelligence for brain MRI analysis.
+Part of **Anes Hadjadj’s doctoral research** on interpretable deep learning for brain MRI analysis.
 
-## Research question
+## Research theme
 
-How can we use image-based explanations to study and improve MGMT prediction while making the behaviour of neural networks easier to understand?
+This project studies knowledge-based image processing and explainable artificial intelligence for MGMT prediction. It addresses two complementary research objectives: predictive performance and understanding model decisions.
 
-## Scope
+## Ongoing contribution
 
-The project explores knowledge-based image filtering, deep learning and regional explanations. It considers two complementary goals: **predictive performance** and **interpretation of model decisions**.
+Detailed methods, experimental results and supporting implementation for the ongoing contribution will be shared **after publication**.
 
-## Availability
+## Contents
 
-The work is ongoing. **Detailed methods, experimental results and supporting implementation will be shared following publication.**
+The existing project material remains available:
 
-The code, figures and results already present in this directory relate to earlier stages of development. They should not be read as the final methods or findings of the current study.
+- [`code/`](./code/): experiment scripts and the annotated Jupyter notebook.
+- [`results/`](./results/): historical tables and reports.
+- [`figures/`](./figures/): existing research illustrations.
+
+These files document earlier development work and do not constitute the final release of the ongoing contribution.
+
+No source MRI, private clinical record, full explanation tensor or checkpoint is included.
 
 [Return to the research profile](../../README.md)
